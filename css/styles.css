@@ -1,0 +1,43 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #034A86;
+  overflow: hidden;
+}
+
+.fullscreen-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Imagen móvil */
+.img-mobile {
+  display: block;
+  object-fit: contain;
+  object-position: top;
+  z-index: 1; /* Asegura que se vea por encima del fondo */
+}
+
+/* Imagen escritorio */
+.img-desktop {
+  display: none; /* Ocultar por defecto (móvil) */
+  object-fit: fill;
+}
+
+
+@media (min-width: 768px) {
+  .img-mobile {
+    display: none;
+  }
+
+  .img-desktop {
+    display: block;
+    object-position: center;
+    z-index: 1;
+  }
+}
