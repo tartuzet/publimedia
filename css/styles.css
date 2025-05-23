@@ -1,3 +1,27 @@
+.navbar {
+  padding: 1rem;
+  background-color: #034a86;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-nav{
+  text-align: center;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+      display: none;
+  }
+}
+
+/*
 html, body {
   margin: 0;
   padding: 0;
@@ -15,17 +39,17 @@ html, body {
   transition: all 0.3s ease-in-out;
 }
 
-/* Imagen móvil */
+
 .img-mobile {
   display: block;
   object-fit: contain;
   object-position: top;
-  z-index: 1; /* Asegura que se vea por encima del fondo */
+  z-index: 1; /* Asegura que se vea por encima del fondo 
 }
 
-/* Imagen escritorio */
+/* Imagen escritorio 
 .img-desktop {
-  display: none; /* Ocultar por defecto (móvil) */
+  display: none; /* Ocultar por defecto (móvil) 
   object-fit: fill;
 }
 
@@ -40,4 +64,4 @@ html, body {
     object-position: center;
     z-index: 1;
   }
-}
+} /*
