@@ -2,6 +2,8 @@
   background-color: #034a86 !important;
 }
 .navbar-nav .nav-link {
+  font-family: 'Raleway';
+  font-weight: 700;
   color: #fefefe !important;
   text-align: center;
 }
@@ -10,27 +12,110 @@ text-decoration: underline;
 }
 
 h2 {
+  font-family: 'Raleway';
+  font-weight: 700;
   margin-top: 40px;
   margin-bottom: 10px;
   color: #034a86;
 }
+.letra-blanca {
+  color: rgb(255, 255, 255);
+}
+.letra-azul {
+  color: #034a86;
+}
+.caja-azul {
+  background-color: #034a86;
+}
+.caja-celeste {
+  background-color: #9ed7dc;
+}
+.caja-amarilla {
+  background-color: #d3de55;
+}
+.caja-rosa {
+  background-color: #e90089;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 p {
-  color: grey;
+  font-size: 18px;
+  font-family: 'Raleway';
+  color: rgb(105, 102, 102);
 }
 li {
-  color: grey;
+  font-size: 18px;
+  font-family: 'Raleway';
+  color: rgb(105, 102, 102);
 }
 .azul {
+  font-weight: 700;
   color: #034a86;
 }
 
 .zona-gris {
-  background-color: rgb(246, 246, 246);
+  width: 100vw;
+  padding: 20px 0;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+  background-color: #f9f9f9;
 }
 
+.custom-card {
+  padding: 0;
+  margin: 0;
+}
+
+.custom-card img {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.card-azul {
+  background-color: #034a86;
+}
+
+.card-cielo {
+  background-color: #9ed7dc;
+}
+
+.card-amarilla {
+  background-color: #d3de55;
+}
+
+.card-rosa {
+  background-color: #e90089;
+}
+
+.titulo-azul {
+  font-weight: 700;
+  margin-top: 20px;
+  color: #034a86;
+}
+.titulo-blanco {
+  font-weight: 700;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.boton-personalizado {
+  border-color: #034a86; 
+  color: #034a86;
+}
+.contact {
+  text-align: center;
+  font-weight: 900;
+  color: #034a86;
+}
 .carousel-indicators [data-bs-target] {
- 
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -45,7 +130,7 @@ li {
   opacity: 1;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 700px) {
   .carousel-indicators {
     display: none !important;
   }
