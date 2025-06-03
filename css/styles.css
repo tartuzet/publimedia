@@ -1,3 +1,4 @@
+
 .navbar {
   background-color: #034a86 !important;
 }
@@ -14,27 +15,17 @@ text-decoration: underline;
 h2 {
   font-family: 'Raleway';
   font-weight: 700;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 25px;
   color: #034a86;
+  text-align: center;
 }
+
 .letra-blanca {
   color: rgb(255, 255, 255);
 }
 .letra-azul {
   color: #034a86;
-}
-.caja-azul {
-  background-color: #034a86;
-}
-.caja-celeste {
-  background-color: #9ed7dc;
-}
-.caja-amarilla {
-  background-color: #d3de55;
-}
-.caja-rosa {
-  background-color: #e90089;
 }
 
 .img-fluid {
@@ -48,73 +39,106 @@ p {
   font-family: 'Raleway';
   color: rgb(105, 102, 102);
 }
-li {
-  font-size: 18px;
-  font-family: 'Raleway';
-  color: rgb(105, 102, 102);
-}
+
 .azul {
   font-weight: 700;
   color: #034a86;
 }
 
 .zona-gris {
-  width: 100vw;
-  padding: 20px 0;
-  margin-left: calc(-50vw + 50%);
-  position: relative;
-  background-color: #f9f9f9;
-}
-
-.custom-card {
-  padding: 0;
-  margin: 0;
-}
-
-.custom-card img {
   width: 100%;
-  display: block;
-  margin: 0;
   padding: 0;
-  border: none;
-}
-
-.card-azul {
-  background-color: #034a86;
-}
-
-.card-cielo {
-  background-color: #9ed7dc;
-}
-
-.card-amarilla {
-  background-color: #d3de55;
-}
-
-.card-rosa {
-  background-color: #e90089;
+  margin: 0;
+  background-color: #f9f9f9;
 }
 
 .titulo-azul {
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 2px;
   color: #034a86;
 }
 .titulo-blanco {
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 2px;
   color: #ffffff;
 }
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
 
+.card {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contenido {
+  text-align: initial;
+  padding: 30px;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-azul {
+  border: none;
+  font-family: 'Raleway';
+  background-color: #034a86;
+  color: white;
+}
+
+.card-celeste {
+  border: none;
+  font-family: 'Raleway';
+  color: #034a86;
+  background-color: #9ed7dc;
+}
+
+.card-amarillo {
+  border: none;
+  font-family: 'Raleway';
+  color: #034a86;
+  background-color: #d3de55;
+}
+
+.card-rosa {
+   border: none;
+  font-family: 'Raleway';
+  background-color: #e90089;
+  color: #ffffff;
+}
 .boton-personalizado {
   border-color: #034a86; 
   color: #034a86;
 }
+
+.btn {
+  margin-top: 30px;
+}
+
 .contact {
   text-align: center;
   font-weight: 900;
   color: #034a86;
 }
+
+.contact a {
+  text-decoration: none;
+  color: #034a86;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 10px;
+}
+
 .carousel-indicators [data-bs-target] {
   display: inline-block;
   width: 15px;
@@ -136,6 +160,13 @@ li {
   }
 }
 
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    
+  }
+
+}
 
 
 
