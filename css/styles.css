@@ -45,6 +45,10 @@ p {
   color: #034a86;
 }
 
+.gris {
+  background-color: #f9f9f9;
+  padding: 40px;
+}  
 .zona-gris {
   width: 100%;
   padding: 0;
@@ -152,6 +156,49 @@ p {
 .carousel-indicators .active {
   background-color: #023865;
   opacity: 1;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  background-color: #034a86;
+  padding: 20px 0;
+}
+
+.nav-links a {
+  font-family: 'Raleway';
+  font-weight: 700;
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.navbar-principal .container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.copyright {
+  text-align: center;
+  color: #034a86;
+  font-weight: 520;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .navbar .container-fluid {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 700px) {
