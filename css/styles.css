@@ -129,7 +129,7 @@ p {
 
 .contact {
   text-align: center;
-  font-weight: 900;
+  font-weight: 600;
   color: #034a86;
 }
 
@@ -189,6 +189,47 @@ p {
   font-weight: 520;
   padding: 10px;
 }
+
+  
+#brandCarousel .carousel-item > div {
+  flex-wrap: nowrap; /* Mantiene todo en una sola línea */
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#brandCarousel .carousel-item img {
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  #brandCarousel .carousel-item > div {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+  }
+
+  #brandCarousel .carousel-item img {
+    max-height: 80px;
+    flex: 0 0 30%;
+  }
+}
+
+/* Ajuste de flechas solo en pantallas grandes */
+@media (min-width: 768px) {
+  #brandCarousel .carousel-control-prev {
+    left: -70px;
+  }
+
+  #brandCarousel .carousel-control-next {
+    right: -70px;
+  }
+}
+
+  
+
 @media (min-width: 768px) {
   .navbar .container-fluid {
     flex-direction: row;
