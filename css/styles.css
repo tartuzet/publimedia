@@ -205,6 +205,64 @@ p {
   max-width: 100%;
 }
 
+.publimedia-card {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.publimedia-arrow,
+.publimedia-text {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  height: 0;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.publimedia-arrow {
+  margin-top: 56px;  
+}
+
+.publimedia-arrow img {
+  max-width: 60px;
+}
+
+.publimedia-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.publimedia-card:hover .publimedia-icon img {
+  transform: scale(1.2);
+}
+.publimedia-card:hover .publimedia-arrow,
+.publimedia-card:hover .publimedia-text {
+  opacity: 1;
+  transform: translateY(0);
+  height: auto;
+  font-weight: 700;
+}
+.seccion-publimedia {
+  background-color: #003366; /* Ejemplo: azul oscuro */
+  padding: 60px 0;
+}
+.publimedia-card:hover {
+  z-index: 2;
+}
+
+.publimedia-card:hover .publimedia-icon img {
+  transform: scale(1.4);
+}
+
+@media (max-width: 767px) {
+  .publimedia-icon img {
+    max-width: 160px;
+  }
+}
+
+
 @media (max-width: 767px) {
   #brandCarousel .carousel-item > div {
     justify-content: center !important;
@@ -227,8 +285,6 @@ p {
     right: -70px;
   }
 }
-
-  
 
 @media (min-width: 768px) {
   .navbar .container-fluid {
